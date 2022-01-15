@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #1F67B3;
+        font-family: "Segoe UI"
+      }
+      #content {
+        color: white;
+        padding: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        height: 100vh;
+      }
+      #face {
+        font-size: 80px;
+      }
+      .buttons {
+        float: right;
+      }
+      .button {
+        text-decoration: none;
+        color: white;
+        border: solid 2px white;
+        padding: 3px 10px;
+        margin-left: 10px;
+      }
+      .button:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      #guest {
+        margin-bottom: 50px;
+      }
+      .space {
+        height: 30px;
+      }
+      #twitter-wrapper {
+        margin-top: 100px;
+      }
+      #twitter-wrapper > p {
+        padding-left: 120px;
+      }
+      #twqr {
+        width: 100px;
+        float: left;
+      }
+      #twitter-url {
+        color: white;
+      }
+      #stop-code-wrapper {
+        padding-left: 120px;
+        font-size: 15px;
+        line-height: 10px;
+        margin-top: 40px;
+      }
+
+      /* スマホ用  */
+      @media screen and (max-width: 480px) {
+        #content {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <div id="face">:)</div>
+      <p>Welcome to yukinissie.com. Your device will run into normal.</p>
+      <p>Take it easy.</p>
+      <div id="guest">
+        <h2>Guest</h2>
+        <p>Sorry, we are now preparing website for you.</p>
+        <p>Please come back next time.</p>
+        <div class="buttons">
+          <a href="https://www.google.com" class="button">Exit to Google</a>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <div id="twitter-wrapper">
+        <img src="./twqr.png" id="twqr" />
+        <p>This is my twitter QR. To follow me, please visit <a href="https://twitter.com/yukinissie" id="twitter-url">https://twitter.com/yukinissie</a></p>
+        <div id="stop-code-wrapper">
+          <p>If you call me, give me this info:</p>
+          <p>Stop code: LOOKS_GOOD_TO_ME</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
